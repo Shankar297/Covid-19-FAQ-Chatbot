@@ -1,0 +1,85 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: what is corona?
+  steps:
+  - intent: corona_intro
+  - action: utter_corona_intro
+
+- story: how does the corona a spread?
+  steps:
+  - intent: corona_spread
+  - action: utter_corona_spread
+
+- story: corona types?
+  steps:
+  - intent: corona_variants
+  - action: utter_corona_variants
+
+- story: what is covid vaccine?
+  steps:
+  - intent: corona_vaccine
+  - action: utter_corona_vaccine
+
+- story: how to safe from corona?
+  steps:
+  - intent: corona_prevention
+  - action: utter_corona_prevention
+
+- story: what is FDA in corona pandemic
+  steps:
+  - intent: corona_fda
+  - action: utter_corona_fda
+
+- story: hand sanitizer effective or not
+  steps:
+  - intent: corona_sanitizer
+  - action: utter_corona_sanitizer
+
+- story:  own sanitizer
+  steps:
+  - intent: corona_own_sanitizer
+  - action: utter_corona_own_sanitizer
+
+- story: corona symptoms
+  steps:
+  - intent: corona_symptoms
+  - action: utter_corona_symptoms
+
+- story: corona transmitted through air
+  steps:
+  - intent: corona_air
+  - action: utter_corona_air
+
+- story: corona and SARS are same
+  steps:
+  - intent: corona_sars
+  - action: utter_corona_sars
